@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find my_irp6_bringup)/launch/irp6-ot-inside.launch">
+  </include>
+  <group>
+    <rosparam>
+      Irp6otSupervisor:
+        hal_component_name: Irp6otHwModel_EC
+      ATI3084:
+        test_mode: true
+      HandForce1:
+        test_mode: true
+      HandForce2:
+        test_mode: true
+    </rosparam>
+  </group>
+</launch>
